@@ -1,6 +1,6 @@
 import tweepy as tp
 import re
-import unidecode
+from unidecode import unidecode
 
 consumer_key = "Qni3V9KJP1HTwNLsiJGMjousn"
 consumer_secret = "7s065I0sueu3z48vKmlQwC2gueVib5EoWx3tUHGbU8r3qJmzpC"
