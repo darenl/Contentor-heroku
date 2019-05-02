@@ -39,7 +39,7 @@
 
             <!--   you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple" -->
 
-            <input id="keywords" hidden value={{keywords | tojson}} />
+            <input id="keywords" hidden value={{keywords }} />
             <div class="sidebar-wrapper">
                 <div class="logo">
                     <img src="../static/img/white_pen.png"
@@ -243,8 +243,8 @@
                                                     </td>
                                                     <td>
                                                         <input type="text" class="form-control" id="generate-1"
-                                                            placeholder={{suggestion[0] | tojson}}
-                                                            value={{suggestion[0] | tojson}}>
+                                                            placeholder="{{suggestion[0]}}"
+                                                            value="{{suggestion[0]}}">
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -255,8 +255,8 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control" id="generate-2" placeholder={{suggestion[1] | tojson}}
-                                                            value={{suggestion[1] | tojson}}>
+                                                        <input type="text" class="form-control" id="generate-2" placeholder="{{suggestion[1]}}"
+                                                            value="{{suggestion[1]}}">
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -266,8 +266,8 @@
                                                             <label for="checkbox3"></label>
                                                         </div>
                                                     </td>
-                                                    <td><input type="text" class="form-control" id="generate-3" placeholder={{suggestion[2] | tojson}}
-                                                            value={{suggestion[2] | tojson}}>
+                                                    <td><input type="text" class="form-control" id="generate-3" placeholder="{{suggestion[2]}}"
+                                                            value="{{suggestion[2]}}">
                                                     </td>
                                                 </tr>
                                             </tbody>

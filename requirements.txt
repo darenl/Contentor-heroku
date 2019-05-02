@@ -70,6 +70,7 @@ tensorflow-estimator==1.13.0
 termcolor==1.1.0
 tornado==4.5.3
 tweepy==3.7.0
+unidecode==1.0.23
 urllib3==1.24.2
 virtualenv==15.1.0
 wcwidth==0.1.7

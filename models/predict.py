@@ -1,5 +1,6 @@
 import tweepy as tp
 import re
+import unidecode
 
 consumer_key = "Qni3V9KJP1HTwNLsiJGMjousn"
 consumer_secret = "7s065I0sueu3z48vKmlQwC2gueVib5EoWx3tUHGbU8r3qJmzpC"
@@ -20,7 +21,7 @@ def generate(keywords):
         if status.text.startswith("@") == False and status.text.startswith("RT") == False:
             tweet = re.sub(r'https.*', '', status.text).replace("\n", " ").strip()
             tweet_count += 1
-            tweets.append(tweet)
+            tweets.append(unidecode(tweet))
     print(tweets)
     return tweets
     # keywords = keywords.split(",")
