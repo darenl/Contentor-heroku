@@ -33,7 +33,6 @@
 </head>
 
 <body>
-
     <div class="wrapper">
         <div class="sidebar" data-color="orange">
 
@@ -163,8 +162,7 @@
                                             <img src="../static/img/banner.png" width="90%" height="60%" style="margin: auto; display: block;">
                                             <div style="text-align: center; width: 80%; margin: auto;">
                                                 <h2 style="background: -webkit-linear-gradient(#41c300, #aaf255); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"><b>Hooray!</b></h2>
-                                                <h3>Your post will be published on Facebook on 4/24/2019 at
-                                                    12:00pm</h3>
+                                                <h3>Your post will be published on Facebook on <span id="time"></span> </h3>
                                             </div>
                                         </div>
                                         <!-- <a href="result.html"><button class="btn btn-info btn-fill pull-right">Generate</button></a> -->
@@ -184,7 +182,7 @@
                                         <div class="calendar_plan">
                                             <div class="cl_plan">
                                                 <div class="cl_title">Today</div>
-                                                <div class="cl_copy">April 23 2019</div>
+                                                <div class="cl_copy"><p id="time2"></p></div>
                                             </div>
                                         </div>
                                         <div class="calendar_events">
@@ -256,7 +254,18 @@
         </div>
     </div>
 
-
+<script>
+        var time = document.getElementById("time");
+        var time2 = document.getElementById("time2");
+        var tmrw = new Date();
+        tmrw.setDate(tmrw.getDate() + 1)
+        time.innerHTML = tmrw.toString();
+        var today = new Date().toString();
+        console.log(today);
+        today = today.split(' ').slice(0, 4).join(' ');
+        console.log(today);
+        time2.innerHTML = today;
+</script>
 </body>
 
 <!--   Core JS Files   -->

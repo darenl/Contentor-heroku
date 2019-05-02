@@ -89,6 +89,7 @@ h2, .h2 {
 h3, .h3 {
     font-size: 28px;
     margin: 20px 0 10px;
+    line-height: 2em;
 }
 
 h4, .h4 {
