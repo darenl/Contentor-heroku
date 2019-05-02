@@ -6,7 +6,7 @@ application = Flask(__name__, instance_relative_config=True)
 from flask import render_template, request, jsonify, redirect, url_for
 from flask_cors import CORS, cross_origin
 
-from .models import predict
+from models import predict
 
 # cors = CORS(app)
 # app.config['CORS_HEADERS'] = "Content-Type"
