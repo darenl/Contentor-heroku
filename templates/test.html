@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+	 <meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <meta name="description" content="">
+	 <meta name="author" content="">
+
+	 <title>Test Flask API</title>
+
+	 <link href="static/css/main.css" rel="stylesheet">
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	 <script src="static/js/main.js"></script>
+</head>
+ 
+<body>
+    <div class="container">
+        <form class="form-signin" id="form_test" role="form">
+	        <h2 class="form-signin-heading">Enter your name</h2>
+			<input type="text" id="my_name" name="my_name" class="form-control" placeholder="Full Name" required autofocus>
+	        <button class="btn btn-lg btn-primary btn-block" id="test" type="button">Test</button>
+		</form>
+		<div id="res">
+		</div>
+		<div>
+			<h2>Testing Multiple Dynamic Inputs</h2>
+			<button id="add_input">Add new input</button>
+			<form role="form" id="new_inputs">
+				<button class="btn btn-lg btn-primary btn-block" id="test_new" type="button">Test</button><br><br>
+			</form>
+		</div>
+     </div>  
+</body>
+ 
+</html>
