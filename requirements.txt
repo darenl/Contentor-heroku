@@ -48,7 +48,6 @@ protobuf==3.7.1
 psutil==5.4.3
 psycopg2==2.7.5
 pylint==1.9.2
-pypiwin32==223
 PySocks==1.6.8
 python-dateutil==2.8.0
 python-editor==1.0.3
