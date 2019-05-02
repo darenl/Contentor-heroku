@@ -20,7 +20,7 @@ def generate(keywords):
         if status.text.startswith("@") == False and status.text.startswith("RT") == False:
             tweet = re.sub(r'https.*', '', status.text).replace("\n", " ").strip()
             tweet_count += 1
-            tweets.append(tweet)
+            tweets.append(tweet.encode("utf-8"))
     print(tweets)
     return tweets
     # keywords = keywords.split(",")
