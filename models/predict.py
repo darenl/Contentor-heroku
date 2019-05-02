@@ -14,7 +14,7 @@ api = tp.API(auth, wait_on_rate_limit=True)
 def generate(keywords):
     tweet_count = 0
     tweets = []
-    for status in tp.Cursor(api.search, q=keywords, lang='en', id='16929349', result_type='popular').items():
+    for status in tp.Cursor(api.search, q=keywords, lang='en', id='16929349').items():
         if tweet_count > 9:
             print("Completed Tweet Retrieval")
             break
