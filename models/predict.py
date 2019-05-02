@@ -15,7 +15,7 @@ def generate(keywords):
     tweet_count = 0
     tweets = []
     for status in tp.Cursor(api.search, q=keywords, lang='en', id='16929349', result_type='popular').items():
-        if tweet_count > 3:
+        if tweet_count > 9:
             print("Completed Tweet Retrieval")
             break
         if status.text.startswith("@") == False and status.text.startswith("RT") == False:
